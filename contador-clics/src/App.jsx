@@ -2,9 +2,15 @@ import { useState } from 'react'
 import './App.css'
 import freeCodeCampLogo from './assets/freecodecamp-logo.png';
 import Boton from './componentes/boton';
+import './hojas-de-estilos/boton.css'
 
 function App() {
-
+  const manejarClic = () => {
+    console.log("clic");
+  }
+  const reinciciarContador =() =>{
+    console.log('reiniciar')
+  }
   return (
     <>
       <div className='App'>
@@ -15,12 +21,12 @@ function App() {
           <Boton 
             texto='click'
             esBotonDeClic={true}
-            manejarClic={}
+            manejarClic={manejarClic}
           />
           <Boton 
           texto='Reiniciar'
           esBotonDeClic={false}
-          manejarClic={}/>
+          manejarClic={reinciciarContador}/>
          </div>
       </div>
     </>
