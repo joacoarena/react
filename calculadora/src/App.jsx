@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import Boton from './componentes/botones'
 import './App.css'
 
 function App() {
@@ -11,7 +11,9 @@ function App() {
           <img src="" alt="" className='freecodecamp-logo' />
         </div>
         <div className='contenedor-calculadora'>
-          <div className='fila'></div>
+          <div className='fila'>
+            <Boton>1</Boton>
+          </div>
           <div className='fila'></div>
           <div className='fila'></div>
           <div className='fila'></div>
