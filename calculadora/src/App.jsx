@@ -2,14 +2,13 @@ import { useState } from 'react'
 import Boton from './componentes/botones'
 import './App.css'
 import Pantalla from './componentes/Pantalla'
+import BotonClear from './componentes/boton-clear'
 function App() {
 
   return (
     <>
       <div className='App'>
-        <div className='freecodecamp-logo-contenedor'>
-          <img src="" alt="" className='freecodecamp-logo' />
-        </div>
+        
         <div className='contenedor-calculadora'>
           <Pantalla/>
           <div className='fila'>
@@ -36,7 +35,11 @@ function App() {
           <Boton>.</Boton>
           <Boton>/</Boton>
           </div>
-          <div className='fila'></div>
+          <div className='fila'>
+            <BotonClear>
+              Clear
+            </BotonClear>
+          </div>
         </div>
      </div>
     </>
